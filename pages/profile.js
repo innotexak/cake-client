@@ -41,7 +41,7 @@ React.useEffect(()=>{
         <Navbar/>
         <div className="w-full h-auto flex justify-center items-center">
         
-            <div className="flex flex-col justify-center items-center w-9/11 h-auto ">
+            <div className="flex flex-col h-auto justify-center items-center w-9/11 md:h-screen ">
                 {profile.map((item)=>{
                     return(<>
                     <h1 className="text-3xl uppercase text-gray-700 mt-12 font-bold">My Information</h1>
