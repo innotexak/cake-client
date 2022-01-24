@@ -35,11 +35,11 @@ export default function Order(){
         <div className="w-full h-screen flex">
         <SideMenu/>
       
-        <div className="w-full h-screen border-gray-500 border-4 overflow-auto">
+        <div className="w-auto h-auto border-gray-500 border-4 overflow-auto">
             <div className="w-full h-20 bg-gray-300 border-4 ">
                 <h2 className="text-3xl font-bold p-3"> Order</h2>
             </div>
-            {data.length <= 0 ? <div className="w-full h-screen my-5">
+            {data.length <= 0 ? <div className="w-auto h-auto my-5">
                <div className="flex justify-center h-1/2 my-4 text-md font-semibold  text-gray-700 ">You have not made any other, please click create to make an order</div>
             </div>:
             <div className="w-screen h-9/11" >

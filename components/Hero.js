@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Hero(){
     return(
         <>
-        <div className="bg-gray-100 w-full h-full border m-auto  border-2 md:flex md:justify-between ">
+        <div className="bg-gray-100 w-full h-auto border m-auto  border-2 md:flex md:justify-between ">
             <div className="flex my-20 mx-6 flex-col justify-center items-center h-full  md:h-96 md:mt-12 md:w-1/2 ">
                 <h2 className="text-3xl font-bold uppercase text-center">We are professional bakers</h2>
                 <h3 className="text-2xl py-3 text-center">Our Services and products are exceptional</h3>

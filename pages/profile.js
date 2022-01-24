@@ -39,12 +39,12 @@ React.useEffect(()=>{
     return(
         <>
         <Navbar/>
-        <div className="w-full h-screen flex justify-center items-center">
+        <div className="w-full h-auto flex justify-center items-center">
         
-            <div className="flex flex-col justify-center items-center w-9/11 h-full ">
+            <div className="flex flex-col justify-center items-center w-9/11 h-auto ">
                 {profile.map((item)=>{
                     return(<>
-                    <h1 className="text-3xl uppercase text-gray-700 font-bold">My Information</h1>
+                    <h1 className="text-3xl uppercase text-gray-700 mt-12 font-bold">My Information</h1>
                         <div key={item.email} className="w-full mb-12 p-6  md:flex md:justify-center md:items-center">
                             <div>
                                 <Image src='/images/defaultImage.png' className="object-cover" alt="profile pic" width="300" height="300"/>

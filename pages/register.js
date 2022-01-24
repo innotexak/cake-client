@@ -57,8 +57,8 @@ export default function Registeration(){
       return (
         <>
         <Navbar/>
-          <div  className='w-full h-screen flex  justify-center'>
-            <div className="w-9/11 mb-4 md:w-1/3 ">
+          <div  className='w-full h-auto flex  justify-center'>
+            <div className="w-9/11 h-auto mb-4 md:w-1/3 ">
               <form onSubmit={formik.handleSubmit}>
                   <h2 className='text-center font-bold text-3xl py-6 uppercase'>Register</h2>      
                 <div className="flex flex-col py-3 ">
@@ -97,12 +97,12 @@ export default function Registeration(){
                     <span style={{ color: 'red', fontSize: '14px', display: 'block' }}>{formik.errors.password2}</span>
                   ) : null}
                 </div>
-                <p className='flex justify-between'>
+                <p className='flex flex-col md:flex-row  justify-between my-6'>
                   <button className="bg-green-500 rounded-xl p-3 text-white text-xl font-bold " type="submit">
                     Signup
                   </button>
                   <span>
-                    Already a member? <Link href="/login"><a>Login</a></Link>
+                    Already a member? <Link href="/login"><a className="text-green-500">Login</a></Link>
                   </span>
                 </p>
               </form>

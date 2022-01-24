@@ -10,7 +10,7 @@ import Body from '../components/Body'
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen w-screen overflow">
       <Navbar/>
       <Hero/>
    
