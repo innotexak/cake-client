@@ -52,8 +52,8 @@ export default function Login(){
       return (
         <>
         <Navbar/>
-          <div className='w-full mx-6 h-screen flex  justify-center'>
-            <div className="w-96 m-4  ">
+          <div className='w-full h-screen flex  justify-center mt-20'>
+            <div className="w-9/11 h-auto mb-4 md:w-1/3   ">
                 <h2 className='text-center font-bold text-3xl py-6 uppercase'>Login</h2>
             
               <form onSubmit={formik.handleSubmit}>
@@ -68,7 +68,7 @@ export default function Login(){
                   {formik.touched.password && formik.errors.password ? <span className="text-red-300">{formik.errors.password}</span> : null}
                 </div>
                 <p className='flex flex-col md:flex-row justify-between mb-3'>
-                  <Link href="/preset"><a className="text-green-500">Forgot password?</a></Link>
+                  <Link href="/forgot"><a className="text-green-500">Forgot password?</a></Link>
                   
                   <p>
                     Not yet a member? <Link href="/register"><a className="text-green-500">Sign up</a></Link>
