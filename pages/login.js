@@ -52,8 +52,8 @@ export default function Login(){
       return (
         <>
         <Navbar/>
-          <div className='w-full h-screen flex  justify-center'>
-            <div className="w-96 mb-4 ">
+          <div className='w-full mx-6 h-screen flex  justify-center'>
+            <div className="w-96 m-4  ">
                 <h2 className='text-center font-bold text-3xl py-6 uppercase'>Login</h2>
             
               <form onSubmit={formik.handleSubmit}>
