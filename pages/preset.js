@@ -10,7 +10,10 @@ import { useRouter } from 'next/router';
 
 
 export default function PasswordReset(){
-  
+  const [Token, setToken] = React.useState(()=>{
+    if(typeof window !="undefined"){
+        return localStorage.getItem('user')
+    }
 const router = useRouter()
     const formik = useFormik({
       validationSchema: ResetValidation,
@@ -19,7 +22,6 @@ const router = useRouter()
         password2: '',
       },
       onSubmit: async (values, actions) => {
-        const Token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFrdWhpbm5vY2VudDIwMTZAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOiIrMjM0ODE1NTMzMjI1OSIsImlhdCI6MTY0Mjc0Nzg0MiwiZXhwIjoxNjQyOTIwNjQyfQ.1joB9hKY6Dm-P2UaXmvNG29BTnJiED0k03kVUzBLwz0"
         const { password1, password2 } = values;
         try {
           const response = await axios.post(`${url}/password/reset`, { password: password1, confirmPassword: password2, Token });
