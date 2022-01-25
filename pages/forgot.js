@@ -28,6 +28,7 @@ export default function ForgotPassword() {
             description:"You can now reset your password",
             duration:5000,
           });
+          
           router.push('/preset')
         }else{
           notification.error({

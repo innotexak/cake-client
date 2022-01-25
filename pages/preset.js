@@ -1,3 +1,4 @@
+import React from 'react';
 import axios from 'axios';
 import { useFormik } from 'formik';
 import { ResetValidation } from '../validation/Validation';
@@ -13,7 +14,8 @@ export default function PasswordReset(){
   const [Token, setToken] = React.useState(()=>{
     if(typeof window !="undefined"){
         return localStorage.getItem('user')
-    }
+    }})
+    
 const router = useRouter()
     const formik = useFormik({
       validationSchema: ResetValidation,
