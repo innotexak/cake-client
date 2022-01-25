@@ -18,6 +18,9 @@ export default function SideMenu(){
                 <Link href="/dashboard/history">
                 <a className="my-4 hover:text-red-500">Receipt</a>
                 </Link>
+                <Link href="/dashboard/pchange">
+                <a className="my-4 hover:text-red-500 ">Change Password</a>
+                </Link>
             </div>
         </div>
         </>
