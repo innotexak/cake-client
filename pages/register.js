@@ -30,7 +30,7 @@ export default function Registeration(){
               notification.success({
                 message:"User Created",
                 description: response.data,
-                duration:5000,
+                duration:4,
               });
                 router.push('/login');
             
@@ -38,7 +38,7 @@ export default function Registeration(){
               notification.error({
                 message:"Bad Request",
                 description: response.data,
-                duration:5000,
+                duration:4,
               });
             }
           } catch (err) {
@@ -46,7 +46,7 @@ export default function Registeration(){
               notification.error({
                 message:"Bad Request",
                 description:err.response.data || err.message,
-                duration:5000,
+                duration:4,
               });
             }
           }

@@ -68,7 +68,7 @@ userObj()
               notification.success({
                 message:'Info',
                 description:response.data,
-                duration:5000,
+                duration:4,
               });
               setToggler('pay')
            
@@ -76,7 +76,7 @@ userObj()
               notification.error({
                 message:'Bad Request',
                 description:response.data,
-                duration:5000,
+                duration:4,
               });
             }
           } catch (err) {
@@ -84,7 +84,7 @@ userObj()
               notification.error({
                 message:'Bad Request',
                 description:err.response.data || err.message,
-                duration:5000,
+                duration:4,
               });
             }
           }

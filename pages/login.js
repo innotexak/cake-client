@@ -31,7 +31,7 @@ export default function Login(){
               notification.success({
                 message:"Logged In!",
                 description: 'Success. Redirecting, please wait',
-                duration:5000,
+                duration:4,
               });
               router.push('/profile')
             }
@@ -41,7 +41,7 @@ export default function Login(){
               notification.error({
                 message:"User Error",
                 description:err.response.data || err.message,
-                duration:5000,
+                duration:4,
               })
             }
           }

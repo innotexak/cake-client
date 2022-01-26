@@ -12,7 +12,7 @@ import { useRouter } from 'next/router';
 export default function Change(){
   const [Token, setToken] = React.useState(()=>{
     if(typeof window !="undefined"){
-        return localStorage.getItem('user')
+        return localStorage.getItem('_user')
     }})
     
 const router = useRouter()
@@ -30,21 +30,21 @@ const router = useRouter()
             notification.success({
               message:"Success Trip",
               description:response.data,
-              duration:5000,
+              duration:4,
             });
             router.push('/dashboard/order')
           }else{
             notification.error({
               message:"Bad Request",
               description:response.data,
-              duration:5000,
+              duration:4,
             });
           }
         }catch(err){
           notification.error({
             message:"Bad Request",
             description:err.response.data || err.message,
-            duration:5000,
+            duration:4,
           });
         }
   
